@@ -1,0 +1,28 @@
+<div class="flex mt-8 justify-center">
+  <mat-card class="">
+    <mat-card-content>
+      <div class="">
+        <h2 class="">
+          {{ sparePartDetail.sparePartName }}
+        </h2>
+        <div class="">
+          <span class="text-gray-600">Spare Part Price:</span>
+          <mat-chip class="ml-2">{{ sparePartDetail.sparePartPrice }}</mat-chip>
+        </div>
+        <div class="">
+          <span class="text-gray-600">Spare Part Quantity:</span>
+          <mat-chip class="ml-2">{{
+            sparePartDetail.sparePartQuantity
+          }}</mat-chip>
+        </div>
+        <div class="">
+          <span class="text-gray-600">Spare Category Name:</span>
+          <mat-chip class="ml-2">{{
+            sparePartDetail.spareCategory.spareCategoryName
+          }}</mat-chip>
+        </div>
+      </div>
+      <button mat-raised-button (click)="home()">Home page</button>
+    </mat-card-content>
+  </mat-card>
+</div>
